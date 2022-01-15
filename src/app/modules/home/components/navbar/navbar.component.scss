@@ -1,0 +1,20 @@
+nav {
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    justify-content: stretch;
+
+    h1 {
+        padding: 20px;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    button {
+        border: none;
+        border-radius: 0;
+        padding: 0 32px;
+        height: 100%;
+        min-width: 0;
+    }
+}

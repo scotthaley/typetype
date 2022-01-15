@@ -1,4 +1,13 @@
 <app-background></app-background>
 <div class="foreground">
-    <app-login-modal></app-login-modal>
+    <ng-container *ngIf="auth.user$ | async as user; else loginBlock">
+        <ng-container *ngIf="user.email">
+            <app-navbar [profile]="user.email"></app-navbar>
+        </ng-container>
+
+    </ng-container>
 </div>
+
+<ng-template #loginBlock>
+    <app-login-modal></app-login-modal>
+</ng-template>

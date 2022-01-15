@@ -6,6 +6,7 @@ body {
 * {
     font-family: 'bitter', 'arial', sans-serif;
     font-weight: 200;
+    box-sizing: border-box;
 }
 
 button {
@@ -23,7 +24,10 @@ button {
     &:hover {
         background-color: white;
         color: deepskyblue;
-        font-weight: bold;
+
+        &:not(.light) {
+            font-weight: bold;
+        }
     }
 }
 
