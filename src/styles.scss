@@ -8,10 +8,35 @@ body {
     font-weight: 200;
 }
 
+button {
+    padding: 16px;
+    background-color: rgb(30, 30, 30);
+    color: rgb(230, 230, 230);
+    border: 1px solid rgb(80, 80, 80);
+    border-radius: 8px;
+    min-width: 200px;
+    font-size: 18px;
+    cursor: pointer;
+
+    transition: background-color 0.2s, color 0.2s;
+
+    &:hover {
+        background-color: white;
+        color: deepskyblue;
+        font-weight: bold;
+    }
+}
+
 @font-face {
     font-family: bitter;
     src: url(assets/fonts/Bitter-Regular.ttf) format("truetype");
     font-weight: 400;
+}
+
+@font-face {
+    font-family: bitter;
+    src: url(assets/fonts/Bitter-Bold.ttf) format("truetype");
+    font-weight: bold;
 }
 
 @font-face {
