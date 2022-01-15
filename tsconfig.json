@@ -4,6 +4,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
@@ -18,6 +19,11 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "strictPropertyInitialization": false,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": ["OffscreenCanvas"],
     "lib": [
       "es2020",
       "dom"

@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+
+* {
+    font-family: 'bitter', 'arial', sans-serif;
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: bitter;
+    src: url(assets/fonts/Bitter-Regular.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: bitter;
+    src: url(assets/fonts/Bitter-Light.ttf) format("truetype");
+    font-weight: 200;
+}
