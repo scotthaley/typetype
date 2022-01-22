@@ -3,6 +3,9 @@
     <ng-container *ngIf="auth.user$ | async as user; else loginBlock">
         <ng-container *ngIf="user.email">
             <app-navbar [profile]="user.email"></app-navbar>
+            <div class="main">
+                <app-dialog title="Race of the Day" [small]="true"></app-dialog>
+            </div>
         </ng-container>
 
     </ng-container>
